@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {font-family: roboto-bold;  src: url('./font/RobotoCondensed-Bold.ttf'); }
+@font-face {font-family: roboto-light;  src: url('./font/RobotoCondensed-Light.ttf'); }
+@font-face {font-family: roboto-medium;  src: url('./font/RobotoCondensed-Medium.ttf'); }
+@font-face {font-family: roboto-regular;  src: url('./font/RobotoCondensed-Regular.ttf'); }
+
+p{
+    color: white;
+}

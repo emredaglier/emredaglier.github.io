@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+<div class="flex flex-col min-h-screen antialiasing overflow-x-hidden overflow-y-auto">
+  <div id="mobile-menu"
+       class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 transition duration-150 ease-in-out">
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-10">
+      <li class="p-5"><a href="">home</a></li>
+      <li class="p-5"><a href="">blog</a></li>
+      <li class="p-5"><a href="">about</a></li>
+    </ul>
+  </div>
+  <div class="w-full h-[144px] bg-amber-600 lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] z-50">
+    <nav class="flex h-[144px] flex-row justify-between items-center">
+      <div class="md:flex lg:w-[260px] md:w-[200px] hidden ">
+        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular]">
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
+        </ul>
+      </div>
+      <div class="flex w-auto max-h-full">
+        <img src="img/nav-logo.png" alt="" class="w-full h-auto">
+      </div>
+      <div class="md:flex items-center justify-center lg:w-[260px] md:w-[200px] hidden">
+        <div class="flex flex-row space-x-3 text-[20px] font-[roboto-regular] items-center justify-center">
+          <a href="#" class="flex flex-row space-x-3 hover:text-[#05AFF2]">
+            <p>emre@daglier.com</p>
+            <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                       stroke="currentColor" class="size-7 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </span>
+          </a>
+
+        </div>
+
+      </div>
+      <button id="nav-mobile-button" class="w-[50px] h-[35px] md:hidden flex flex-col justify-between">
+        <span class="h-[10px] w-full bg-white rounded-full"></span>
+        <span class="h-[10px] w-full bg-white rounded-full"></span>
+      </button>
+    </nav>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

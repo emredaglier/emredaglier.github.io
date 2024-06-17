@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="output.css">
 </head>
 
-<body>
+<body class="bg-black">
 <div class="flex flex-col min-h-screen antialiasing overflow-x-hidden overflow-y-auto">
   <div id="mobile-menu"
-       class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 transition duration-150 ease-in-out">
-    <ul class="flex flex-col justify-center items-center text-white text-3xl p-10">
-      <li class="p-5"><a href="">home</a></li>
-      <li class="p-5"><a href="">blog</a></li>
-      <li class="p-5"><a href="">about</a></li>
+       class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 transition duration-150 ease-in-out border-b border-gray-700">
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5">
+      <li class="flex m-5 w-full justify-center"><a href="">home</a></li>
+      <li class="flex m-5 w-full justify-center"><a href="">blog</a></li>
+      <li class="flex m-5 w-full justify-center"><a href="">about</a></li>
     </ul>
   </div>
-  <div class="w-full h-[144px] bg-amber-600 lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] z-50">
+  <div class="w-full h-[144px] lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] z-50 border-b border-gray-700">
     <nav class="flex h-[144px] flex-row justify-between items-center">
       <div class="md:flex lg:w-[260px] md:w-[200px] hidden ">
-        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular]">
+        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-white">
           <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
           <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
           <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
@@ -33,7 +33,7 @@
       </div>
       <div class="md:flex items-center justify-center lg:w-[260px] md:w-[200px] hidden">
         <div class="flex flex-row space-x-3 text-[20px] font-[roboto-regular] items-center justify-center">
-          <a href="#" class="flex flex-row space-x-3 hover:text-[#05AFF2]">
+          <a href="#" class="flex flex-row space-x-3 text-white">
             <p>emre@daglier.com</p>
             <span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -52,6 +52,30 @@
     </nav>
 
   </div>
+
+  <div class="absolute flex mt-[100px] bg-desktop bg-cover bg-center h-screen w-full">
+    <div class="flex flex-row w-full md:items-center md:justify-between mt-[144px] pb-32">
+      <div class="flex md:flex-row md:align-baseline flex-col md:w-full bg-amber-500s
+                  lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px]
+                  md:justify-between font-[roboto-medium] text-white
+                  md:text-7xl text-6xl">
+        <p>aviator</p>
+        <span class="flex md:w-[5px] md:h-auto h-[5px] md:m-0 w-full bg-white mt-5 mb-5"></span>
+        <p>coder</p>
+        <span class="flex md:w-[5px] md:h-auto h-[5px] md:m-0 w-full bg-white mt-5 mb-5"></span>
+        <p>designer</p>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+
 </div>
 
 <script src="script.js"></script>

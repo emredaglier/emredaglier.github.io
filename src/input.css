@@ -7,6 +7,9 @@
 @font-face {font-family: roboto-medium;  src: url('./font/RobotoCondensed-Medium.ttf'); }
 @font-face {font-family: roboto-regular;  src: url('./font/RobotoCondensed-Regular.ttf'); }
 
-p{
-    color: white;
+.bg-mobile {
+    background-image: url('./img/bg-desktop.jpg');
+}
+.bg-desktop {
+    background-image: url('./img/bg-desktop.jpg');
 }

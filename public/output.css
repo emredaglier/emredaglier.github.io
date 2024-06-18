@@ -945,7 +945,7 @@ video {
 }
 
 .bg-desktop {
-  background-image: url('./img/bg-desktop.jpg');
+  background-image: url('./img/bg-desktop.webp');
   background-size: cover;
 }
 

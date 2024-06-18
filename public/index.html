@@ -70,7 +70,7 @@
 
     </div>
   </div>
-  <div class="flex flex-col items-center lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mt-32 lg:mt-48 xl:mt-64 md:mb-32 lg:mb-48 xl:mb-64">
+  <div class="flex flex-col items-center lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mt-32 lg:mt-48 md:mb-32 lg:mb-48">
     <div class="flex md:flex-row flex-col">
       <div class="flex flex-col md:w-[287px]">
         <div class="flex font-[roboto-regular] text-white text-3xl pb-6">
@@ -120,9 +120,9 @@
     </div>
     <a href="#"><button class="btn-primary">about me</button></a>
   </div>
-  <div class="flex flex-col items-center lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mb-32 lg:mb-48 xl:mb-64">
+  <div class="flex flex-col items-center lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mb-32 lg:mb-48 ">
     <div class="flex md:flex-row flex-col">
-      <div class="flex flex-col md:w-[363px]">
+      <div class="flex flex-col md:w-[350px]">
         <div class="flex font-[roboto-regular] text-white text-3xl pb-6">
           <div class="border-b-2 border-[#05AFF2]">
             <p>things that i found interesting</p>
@@ -138,7 +138,7 @@
           <div class=" relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
             <img src="img/blog-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl text-center font-[roboto-medium] p-10">
+            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
                 <p>top 5 most advanced fighter jets</p>
               </div>
@@ -157,7 +157,7 @@
           <div class="relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
             <img src="img/blog-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl text-center font-[roboto-medium] p-10">
+            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
                 <p>top 5 most advanced fighter jets</p>
               </div>
@@ -176,7 +176,7 @@
           <div class="relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
             <img src="img/blog-1.jpg" alt="" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-black opacity-50"></div>
-            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl text-center font-[roboto-medium] p-10">
+            <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
                 <p>top 5 most advanced fighter jets</p>
               </div>
@@ -195,6 +195,72 @@
       </div>
     </div>
     <a href="#"><button class="btn-primary">blog</button></a>
+  </div>
+
+  <div class="flex flex-col lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mb-32 lg:mb-48">
+    <div class="flex xl:flex-row flex-col">
+      <div class="flex flex-col md:w-[363px]">
+        <div class="flex font-[roboto-regular] text-white text-3xl pb-6">
+          <div class="border-b-2 border-[#05AFF2]">
+            <p>get in touch wih me</p>
+          </div>
+        </div>
+        <div class="flex font-[roboto-bold] text-7xl overflow-y-hidden text-white pb-6">
+          <p>contact</p>
+        </div>
+
+      </div>
+      <div class="flex w-full">
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col w-full">
+          <input type="hidden" name="access_key" value="867181c4-0c5e-4c94-8c11-d264ea09a8f8">
+
+          <div class="flex lg:flex-row flex-col w-full lg:space-x-10">
+            <div class="flex flex-col space-y-10">
+              <div class="flex flex-col text-white font-[roboto-regular] text-2xl">
+                <label for="name">name</label>
+                <input type="text" name="name" id="name" required class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]">
+              </div>
+              <div class="flex flex-col text-white font-[roboto-regular] text-2xl">
+                <label for="mail">e-mail</label>
+                <input type="text" name="email" id="mail" required class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]">
+              </div>
+
+          </div>
+            <div class="flex w-full">
+              <div class="flex flex-col w-full text-white font-[roboto-regular] text-2xl lg:mt-0 mt-10">
+                <label for="message">message</label>
+                <textarea name="message" id="message" required class="flex xl:min-h-[60px] min-h-[180px] h-full w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2] "></textarea>
+              </div>
+            </div>
+          </div>
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+          <div class="flex justify-between w-full mt-10">
+            <label>
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            </label>
+            <a href=""><button type="submit" class="btn-primary">send</button></a>
+          </div>
+
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="flex md:flex-row flex-col items-center justify-between lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] border-t-2 border-gray-700">
+    <div class="flex pt-6 pb-6">
+      <div class="flex w-[200px]">
+        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-gray-700">
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex md:pb-0 pb-6 text-gray-700 text-[20px] font-[roboto-regular]">
+      <p>Copyright © 2024</p>
+    </div>
   </div>
 
 

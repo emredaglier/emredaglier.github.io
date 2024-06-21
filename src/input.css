@@ -12,10 +12,40 @@
     background-size: cover;
 }
 
+.bg-desktop-blog{
+    background-image: url('./blog/img/home.png');
+    background-size: cover;
+}
+
 .btn-primary{
     padding: 8px 32px;
     background-color: #05AFF2;
     color: white;
     font-family: roboto-regular, serif;
     font-size: 1.75rem;
+}
+
+.btn-primary:hover{
+    background-color: #47c6f8;
+}
+
+.a-button{
+    position: relative;
+}
+
+.a-button::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #05AFF2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.a-button:hover::after {
+    transform: scaleX(1);
 }

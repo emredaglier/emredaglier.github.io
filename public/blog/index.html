@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>emre @ aviator | coder | designer</title>
+  <link href="../output.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body class="bg-black">
+<div class="flex flex-col relative min-h-screen antialiasing overflow-x-hidden overflow-y-auto">
+  <div class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 border-b border-gray-700" id="mobile-menu">
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5 border-b border-gray-700">
+      <li class="flex m-5 w-full justify-center"><a href="">home</a></li>
+      <li class="flex m-5 w-full justify-center"><a href="">blog</a></li>
+      <li class="flex m-5 w-full justify-center"><a href="">about</a></li>
+    </ul>
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5">
+      <li class="flex m-5 w-full justify-center">
+        <a class="flex relative flex-row space-x-3 text-white" href="mailto:emre@daglier.com">emre@daglier.com
+          <span class="pl-5">
+          <svg class="absolute mt-1 h-full text-white" fill="none" stroke="currentColor" stroke-width="1.5"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="w-full h-[144px] lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] z-50 border-b border-gray-700">
+    <nav class="flex h-[144px] flex-row justify-between items-center">
+      <div class="md:flex lg:w-[260px] md:w-[200px] hidden ">
+        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-white">
+          <li><a href="../"><p class="a-button">home</p></a></li>
+          <li><a href="."><p class="a-button">blog</p></a></li>
+          <li><a href="#"><p class="a-button">about</p></a></li>
+        </ul>
+      </div>
+      <div class="flex w-auto max-h-full">
+        <a href="../"><img alt="" class="w-full h-auto" src="../img/nav-logo.webp"></a>
+      </div>
+      <div class="md:flex items-center justify-center lg:w-[260px] md:w-[200px] hidden">
+        <div class="flex flex-row space-x-3 text-[20px] font-[roboto-regular] items-center justify-center">
+          <a class="flex relative flex-row space-x-3 text-white" href="mailto:emre@daglier.com">emre@daglier.com
+            <span class="pl-5">
+              <svg class="absolute h-full text-white" fill="none" stroke="currentColor" stroke-width="1.5"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+
+      </div>
+      <button class="w-[50px] h-[35px] md:hidden flex flex-col justify-between" id="nav-mobile-button">
+        <span class="h-[10px] w-full bg-white rounded-full transform transition duration-300 ease-in-out"></span>
+        <span class="h-[10px] w-full bg-white rounded-full transform transition duration-300 ease-in-out"></span>
+      </button>
+    </nav>
+</div>
+
+
+  <div class="flex bg-desktop-blog bg-cover bg-center h-screen w-full">
+    <div class="flex flex-col md:justify-end justify-center md:mb-64 lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] space-y-6">
+      <a href="#" class="flex flex-col text-white md:w-1/2">
+        <div class="font-[roboto-light] text-xl"><p>19.05.2024 | latest</p></div>
+        <div class="font-[roboto-medium] text-6xl"><p>top 5 most advanced fighter jets</p></div>
+        <div class="font-[roboto-light] text-2xl">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed eleifend ante.
+            Phasellus rhoncus vestibulum felis id efficitur. Sed sed magna ac arcu iaculis elementum eget et odio.</p>
+        </div>
+      </a>
+
+      <div class="flex">
+        <button class="btn btn-primary">read</button>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col space-y-12 w-full lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] md:mt-32 lg:mt-48 md:mb-32 lg:mb-48z">
+    <div class="flex text-white font-[roboto-medium] text-4xl justify-center">
+      <p>my top 3 articles</p>
+    </div>
+
+    <div class="grid lg:grid-cols-8 lg:grid-rows-2 grid-flow-row w-full gap-12">
+
+      <a href="#" class="relative lg:col-span-5 lg:row-span-2 lg:w-auto w-full border-2 border-[#05AFF2] lg:h-[450px] h-[300px]">
+        <img src="./img/blog-1.jpg" alt="" class="absolute flex h-full w-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0"></div>
+        <div class="absolute bottom-0 w-full">
+          <div class="flex flex-row justify-between w-full lg:p-12 md:p-8 p-4">
+            <p class="font-[roboto-medium] text-3xl text-white">top 5 most advanced fighter jets</p>
+            <div class="flex items-end">
+              <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                      stroke-width="1.71431"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="relative lg:col-span-3 border-2 lg:w-auto w-full border-[#05AFF2] lg:h-auto h-[300px]">
+        <img src="./img/blog-1.jpg" alt="" class="absolute flex h-full w-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0"></div>
+        <div class="absolute bottom-0 w-full">
+          <div class="flex flex-row justify-between w-full lg:p-12 md:p-8 p-4">
+            <p class="font-[roboto-medium] text-3xl text-white">top 5 most advanced fighter jets</p>
+            <div class="flex items-end">
+              <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                      stroke-width="1.71431"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="relative lg:col-span-3 border-2 lg:w-auto w-full border-[#05AFF2] lg:h-auto h-[300px]">
+        <img src="./img/blog-1.jpg" alt="" class="absolute flex h-full w-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent z-0"></div>
+        <div class="absolute bottom-0 w-full">
+          <div class="flex flex-row justify-between w-full lg:p-12 md:p-8 p-4">
+            <p class="font-[roboto-medium] text-3xl text-white">top 5 most advanced fighter jets</p>
+            <div class="flex items-end">
+              <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                    stroke-width="1.71431"/>
+            </svg>
+            </div>
+
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <div class="flex md:flex-row flex-col items-center justify-between lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] border-t-2 border-gray-700">
+    <div class="flex pt-6 pb-6">
+      <div class="flex w-[200px]">
+        <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-gray-700">
+          <li><a href="."><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
+          <li><a href="public/blog"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
+          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex md:pb-0 pb-6 text-gray-700 text-[20px] font-[roboto-regular]">
+      <p>Copyright © 2024</p>
+    </div>
+  </div>
+
+<script src="../script.js"></script>
+
+
+</div>
+</body>
+</html>

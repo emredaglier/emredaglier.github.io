@@ -2,52 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="output.css">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>emre @ aviator | coder | designer</title>
+  <link href="output.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#2d89ef">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body class="bg-black">
-<div class="flex flex-col min-h-screen antialiasing overflow-x-hidden overflow-y-auto">
-  <div id="mobile-menu"
-       class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 transition duration-150 ease-in-out border-b border-gray-700">
-    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5">
+<div class="flex flex-col relative min-h-screen antialiasing overflow-x-hidden overflow-y-auto">
+  <div class="hidden md:hidden flex-col w-full bg-black absolute mt-[144px] z-40 border-b border-gray-700" id="mobile-menu">
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5 border-b border-gray-700">
       <li class="flex m-5 w-full justify-center"><a href="">home</a></li>
       <li class="flex m-5 w-full justify-center"><a href="">blog</a></li>
       <li class="flex m-5 w-full justify-center"><a href="">about</a></li>
+    </ul>
+    <ul class="flex flex-col justify-center items-center text-white text-3xl p-5">
+      <li class="flex m-5 w-full justify-center">
+        <a class="flex relative flex-row space-x-3 text-white" href="mailto:emre@daglier.com">emre@daglier.com
+          <span class="pl-5">
+          <svg class="absolute mt-1 h-full text-white" fill="none" stroke="currentColor" stroke-width="1.5"
+               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        </a>
+      </li>
     </ul>
   </div>
   <div class="w-full h-[144px] lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] z-50 border-b border-gray-700">
     <nav class="flex h-[144px] flex-row justify-between items-center">
       <div class="md:flex lg:w-[260px] md:w-[200px] hidden ">
         <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-white">
-          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
-          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
-          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
+          <li><a href="#"><p class="a-button">home</p></a></li>
+          <li><a href="blog"><p class="a-button">blog</p></a></li>
+          <li><a href="#"><p class="a-button">about</p></a></li>
         </ul>
       </div>
       <div class="flex w-auto max-h-full">
-        <img src="img/nav-logo.webp" alt="" class="w-full h-auto">
+        <a href="."><img alt="" class="w-full h-auto" src="img/nav-logo.webp"></a>
       </div>
       <div class="md:flex items-center justify-center lg:w-[260px] md:w-[200px] hidden">
         <div class="flex flex-row space-x-3 text-[20px] font-[roboto-regular] items-center justify-center">
-          <a href="#" class="flex flex-row space-x-3 text-white">
-            <p>emre@daglier.com</p>
-            <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                       stroke="currentColor" class="size-7 text-white">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </span>
+          <a class="flex relative flex-row space-x-3 text-white" href="mailto:emre@daglier.com">emre@daglier.com
+            <span class="pl-5">
+              <svg class="absolute h-full text-white" fill="none" stroke="currentColor" stroke-width="1.5"
+                   viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
           </a>
-
         </div>
 
       </div>
-      <button id="nav-mobile-button" class="w-[50px] h-[35px] md:hidden flex flex-col justify-between">
-        <span class="h-[10px] w-full bg-white rounded-full"></span>
-        <span class="h-[10px] w-full bg-white rounded-full"></span>
+      <button class="w-[50px] h-[35px] md:hidden flex flex-col justify-between" id="nav-mobile-button">
+        <span class="h-[10px] w-full bg-white rounded-full transform transition duration-300 ease-in-out"></span>
+        <span class="h-[10px] w-full bg-white rounded-full transform transition duration-300 ease-in-out"></span>
       </button>
     </nav>
 
@@ -81,13 +98,14 @@
           <p>let me introduce myself</p>
         </div>
         <div class="object-cover">
-          <img src="img/portrait.webp" alt="">
+          <img alt="" src="img/portrait.webp">
         </div>
 
       </div>
       <div class="w-full grid lx:grid-cols-3 xl:gap-12 md:ml-12 md:mt-0 mt-12 gap-6 text-white font-[roboto-light] text-2xl">
         <div class="flex w-full md:h-auto min-h-[144px] border-2 border-[#05AFF2] p-6">
-          <div class="flex "><p>Born and based in <span class="text-[#05AFF2]">Türkiye</span>, a curious aviator who has a descent understanding
+          <div class="flex "><p>Born and based in <span class="text-[#05AFF2]">Türkiye</span>, a curious aviator who has
+            a descent understanding
             in coding and designing.
             Using his abilities in real life to enhance with the world itself.</p></div>
 
@@ -104,20 +122,25 @@
         </div>
         <div class="lg:flex md:hidden flex w-full md:h-auto min-h-[144px] border-2 border-[#05AFF2] p-6 xl:col-span-2">
           <div class="flex">
-            <p>An <span class="text-[#05AFF2]">aviation enthusiast</span>, from operating a plane to working principles of aerodynamics, he has a strong understanding.
+            <p>An <span class="text-[#05AFF2]">aviation enthusiast</span>, from operating a plane to working principles
+              of aerodynamics, he has a strong understanding.
               Dove deep into the simulation world, connecting real-world airliner
-              operating procedures into the virtual world as well as understanding ATC phraseology and rules of the sky.</p>
+              operating procedures into the virtual world as well as understanding ATC phraseology and rules of the sky.
+            </p>
           </div>
         </div>
         <div class="lg:flex md:hidden flex w-full md:h-auto min-h-[144px] border-2 border-[#05AFF2] p-6 ">
           <div class="flex">
-            <p><span class="text-[#05AFF2]">Art</span> is everything to him since he believes that a living thing shouldn't be judged by whether
+            <p><span class="text-[#05AFF2]">Art</span> is everything to him since he believes that a living thing
+              shouldn't be judged by whether
               it's breathing or not; rather, it should be considered based on whether it has 'meaning' and 'art'.</p>
           </div>
         </div>
       </div>
     </div>
-    <a href="#"><button class="btn-primary">about me</button></a>
+    <a href="#">
+      <button class="btn-primary">about me</button>
+    </a>
   </div>
   <div class="flex flex-col items-center lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mb-32 lg:mb-48 ">
     <div class="flex md:flex-row flex-col">
@@ -133,9 +156,9 @@
 
       </div>
       <div class="w-full grid lx:grid-cols-3 md:grid-flow-col grid-flow-row xl:gap-12 md:ml-12 md:mt-0 mt-12 gap-6">
-        <a href="#" class="flex">
-          <div class=" relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
-            <img src="img/blog-1.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
+        <a class="flex" href="#">
+          <div class="relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
+            <img alt="" class="absolute inset-0 w-full h-full object-cover" src="img/blog-1.webp">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
@@ -143,8 +166,9 @@
               </div>
               <div class="flex justify-end w-full">
                 <div class="flex">
-                  <svg width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-width="1.71431" stroke-linecap="round"/>
+                  <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                          stroke-width="1.71431"/>
                   </svg>
                 </div>
 
@@ -152,9 +176,9 @@
             </div>
           </div>
         </a>
-        <a href="#" class="lg:flex md:hidden flex">
+        <a class="lg:flex md:hidden flex" href="#">
           <div class="relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
-            <img src="img/blog-1.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <img alt="" class="absolute inset-0 w-full h-full object-cover" src="img/blog-1.webp">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
@@ -162,8 +186,9 @@
               </div>
               <div class="flex justify-end w-full">
                 <div class="flex">
-                  <svg width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-width="1.71431" stroke-linecap="round"/>
+                  <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                          stroke-width="1.71431"/>
                   </svg>
                 </div>
 
@@ -171,9 +196,9 @@
             </div>
           </div>
         </a>
-        <a href="#" class="xl:flex md:hidden flex">
+        <a class="xl:flex md:hidden flex" href="#">
           <div class="relative w-full bg-white min-h-[320px] border-[#05AFF2] border-2">
-            <img src="img/blog-1.webp" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <img alt="" class="absolute inset-0 w-full h-full object-cover" src="img/blog-1.webp">
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="relative flex flex-col items-center justify-end w-full h-full text-white text-4xl font-[roboto-medium] md:p-10 p-6">
               <div class="flex">
@@ -181,8 +206,9 @@
               </div>
               <div class="flex justify-end w-full">
                 <div class="flex">
-                  <svg width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-width="1.71431" stroke-linecap="round"/>
+                  <svg fill="none" height="41" viewBox="0 0 50 41" width="50" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 20.5H46.18M27.9577 1L48 20.5L27.9577 40" stroke="#DADADA" stroke-linecap="round"
+                          stroke-width="1.71431"/>
                   </svg>
                 </div>
 
@@ -193,7 +219,9 @@
 
       </div>
     </div>
-    <a href="#"><button class="btn-primary">blog</button></a>
+    <a href="#">
+      <button class="btn-primary">blog</button>
+    </a>
   </div>
   <div class="flex flex-col lg:pl-[120px] lg:pr-[120px] md:pl-[60px] md:pr-[60px] pl-[30px] pr-[30px] p-32 space-y-10 md:mb-32 lg:mb-48">
     <div class="flex xl:flex-row flex-col">
@@ -209,34 +237,39 @@
 
       </div>
       <div class="flex w-full">
-        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col w-full">
-          <input type="hidden" name="access_key" value="867181c4-0c5e-4c94-8c11-d264ea09a8f8">
+        <form action="https://api.web3forms.com/submit" class="flex flex-col w-full" method="POST">
+          <input name="access_key" type="hidden" value="867181c4-0c5e-4c94-8c11-d264ea09a8f8">
 
           <div class="flex lg:flex-row flex-col w-full lg:space-x-10">
             <div class="flex flex-col space-y-10">
               <div class="flex flex-col text-white font-[roboto-regular] text-2xl">
                 <label for="name">name</label>
-                <input type="text" name="name" id="name" required class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]">
+                <input class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]" id="name" name="name" required
+                       type="text">
               </div>
               <div class="flex flex-col text-white font-[roboto-regular] text-2xl">
                 <label for="mail">e-mail</label>
-                <input type="text" name="email" id="mail" required class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]">
+                <input class="min-h-[60px] w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2]" id="mail" name="email" required
+                       type="text">
               </div>
 
-          </div>
+            </div>
             <div class="flex w-full">
               <div class="flex flex-col w-full text-white font-[roboto-regular] text-2xl lg:mt-0 mt-10">
                 <label for="message">message</label>
-                <textarea name="message" id="message" required class="flex xl:min-h-[60px] min-h-[180px] h-full w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2] "></textarea>
+                <textarea class="flex xl:min-h-[60px] min-h-[180px] h-full w-full text-2xl p-5 bg-transparent border border-1 border-[#05AFF2] " id="message" name="message"
+                          required></textarea>
               </div>
             </div>
           </div>
           <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
           <div class="flex justify-between w-full mt-10">
             <label>
-              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <input class="hidden" name="botcheck" style="display: none;" type="checkbox">
             </label>
-            <a href=""><button type="submit" class="btn-primary">send</button></a>
+            <a href="">
+              <button class="btn-primary" type="submit">send</button>
+            </a>
           </div>
 
 
@@ -249,8 +282,8 @@
     <div class="flex pt-6 pb-6">
       <div class="flex w-[200px]">
         <ul class="flex flex-row justify-between w-full text-[20px] font-[roboto-regular] text-gray-700">
-          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
-          <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
+          <li><a href="."><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">home</p></a></li>
+          <li><a href="blog"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">blog</p></a></li>
           <li><a href="#"><p class="hover:text-[#05AFF2] transition duration-200 ease-in-out">about</p></a></li>
         </ul>
       </div>
@@ -259,10 +292,9 @@
       <p>Copyright © 2024</p>
     </div>
   </div>
+</div>
 
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>

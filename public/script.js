@@ -13,3 +13,4 @@ document.getElementById('nav-mobile-button').addEventListener('click', function(
     spans[1].classList.toggle('-translate-y-3');
 
 });
+

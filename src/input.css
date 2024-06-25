@@ -7,6 +7,32 @@
 @font-face {font-family: roboto-medium;  src: url('./font/RobotoCondensed-Medium.ttf'); }
 @font-face {font-family: roboto-regular;  src: url('./font/RobotoCondensed-Regular.ttf'); }
 
+@font-face {font-family: playfair;  src: url('./font/PlayfairDisplay-Regular.ttf'); }
+@font-face {font-family: playfair-italic;  src: url('./font/PlayfairDisplay-Italic.ttf'); }
+@font-face {font-family: playfair-semi;  src: url('./font/PlayfairDisplay-SemiBold.ttf'); }
+@font-face {font-family: playfair-semi-italic;  src: url('./font/PlayfairDisplay-SemiBoldItalic.ttf'); }
+@font-face {font-family: playfair-bold;  src: url('./font/PlayfairDisplay-Bold.ttf'); }
+@font-face {font-family: playfair-bold-italic;  src: url('./font/RobotoCondensed-BoldItalic.ttf'); }
+
+.i{
+    font-family: playfair-italic, serif;
+}
+
+.sb{
+    font-family: playfair-semi, serif;
+}
+
+.sbi{
+    font-family: playfair-semi-italic, serif;
+}
+
+.b{
+    font-family: playfair-bold, serif;
+}
+
+.bi{
+    font-family: playfair-bold-italic, serif;
+}
 
 .btn-primary{
     padding: 8px 32px;

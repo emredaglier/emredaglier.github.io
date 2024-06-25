@@ -7,15 +7,6 @@
 @font-face {font-family: roboto-medium;  src: url('./font/RobotoCondensed-Medium.ttf'); }
 @font-face {font-family: roboto-regular;  src: url('./font/RobotoCondensed-Regular.ttf'); }
 
-.bg-desktop {
-    background-image: url('./img/bg-desktop.webp');
-    background-size: cover;
-}
-
-.bg-desktop-blog{
-    background-image: url('./blog/img/home.png');
-    background-size: cover;
-}
 
 .btn-primary{
     padding: 8px 32px;

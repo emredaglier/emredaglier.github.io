@@ -7,32 +7,12 @@
 @font-face {font-family: roboto-medium;  src: url('./font/RobotoCondensed-Medium.ttf'); }
 @font-face {font-family: roboto-regular;  src: url('./font/RobotoCondensed-Regular.ttf'); }
 
-@font-face {font-family: playfair;  src: url('./font/PlayfairDisplay-Regular.ttf'); }
-@font-face {font-family: playfair-italic;  src: url('./font/PlayfairDisplay-Italic.ttf'); }
-@font-face {font-family: playfair-semi;  src: url('./font/PlayfairDisplay-SemiBold.ttf'); }
-@font-face {font-family: playfair-semi-italic;  src: url('./font/PlayfairDisplay-SemiBoldItalic.ttf'); }
-@font-face {font-family: playfair-bold;  src: url('./font/PlayfairDisplay-Bold.ttf'); }
-@font-face {font-family: playfair-bold-italic;  src: url('./font/RobotoCondensed-BoldItalic.ttf'); }
-
-.i{
-    font-family: playfair-italic, serif;
-}
-
-.sb{
-    font-family: playfair-semi, serif;
-}
-
-.sbi{
-    font-family: playfair-semi-italic, serif;
-}
-
-.b{
-    font-family: playfair-bold, serif;
-}
-
-.bi{
-    font-family: playfair-bold-italic, serif;
-}
+@font-face {font-family: playfair;  src: url('./font/playfair/PlayfairDisplay-Regular.ttf'); }
+@font-face {font-family: playfair-italic;  src: url('./font/playfair/PlayfairDisplay-Italic.ttf'); }
+@font-face {font-family: playfair-semi;  src: url('./font/playfair/PlayfairDisplay-SemiBold.ttf'); }
+@font-face {font-family: playfair-semi-italic;  src: url('./font/playfair/PlayfairDisplay-SemiBoldItalic.ttf'); }
+@font-face {font-family: playfair-bold;  src: url('./font/playfair/PlayfairDisplay-Bold.ttf'); }
+@font-face {font-family: playfair-bold-italic;  src: url('./font/playfair/RobotoCondensed-BoldItalic.ttf'); }
 
 .btn-primary{
     padding: 8px 32px;
@@ -42,8 +22,33 @@
     font-size: 1.75rem;
 }
 
-.btn-primary:hover{
+.btn-secondary{
+    padding: 8px 32px;
+    border: 2px solid #05AFF2;
+    background-color: transparent;
+    color: #05AFF2;
+    font-family: roboto-regular, serif;
+    font-size: 1.25rem;
+}
+
+.btn-text{
+    color: #05AFF2;
+    font-family: roboto-regular, serif;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+.btn-primary:hover {
     background-color: #47c6f8;
+}
+
+.btn-secondary:hover{
+    border-color: #47c6f8;
+    color: #47c6f8;
+
+}
+.btn-text:hover{
+    color: #47c6f8;
 }
 
 .a-button{
